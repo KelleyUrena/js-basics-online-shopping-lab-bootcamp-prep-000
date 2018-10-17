@@ -95,5 +95,8 @@ function removeFromCart(itemName)
 
 
 function placeOrder(cardNumber) {
-  // write your code here
+   if(!cardNumber)
+  { 
+    return "That item is not in your cart.";
+  }
 }
