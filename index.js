@@ -101,5 +101,5 @@ function placeOrder(cardNumber) {
   }
   var cartTotal = total();
   cart = [];
-  return "Your total cost is $" + cartTotal + ", which will be charted to the card " + cardNumber + ".";
+  return "Your total cost is $" + cartTotal + ", which will be charged to the card " + cardNumber + ".";
 }
