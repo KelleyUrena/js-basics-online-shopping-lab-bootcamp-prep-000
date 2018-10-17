@@ -15,6 +15,7 @@ function addToCart(itemName) {
   var cartCopy = getCart() 
   cartCopy.push(item)
   setCart(cartCopy)
+  //cart.push(item)//
   return itemName + ' has been added to your cart.'
 }
 
