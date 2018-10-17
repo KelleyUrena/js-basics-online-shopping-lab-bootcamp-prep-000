@@ -76,10 +76,10 @@ function total() {
 }
 
 function removeFromCart(itemName) {
-  // write your code here
+ var newCart = [];
   for(var i = 0; i < cart.length; i++){
-    if(cart[i].itemName == itemName){
-      delete itemName
+    if(cart[i].itemName != itemName){
+      newCart.append(cart[i])   
     
     
 }
