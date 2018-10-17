@@ -86,7 +86,9 @@ function removeFromCart(itemName)
     }
   }
   if(newCart.length == cart.length)
-  {
+  { 
+    return "That item is not in your cart.";
+  }
   cart = newCart;
  }
 
