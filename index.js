@@ -75,16 +75,20 @@ function total() {
   return total;
 }
 
-function removeFromCart(itemName) {
- var newCart = [];
-  for(var i = 0; i < cart.length; i++){
-    if(cart[i].itemName != itemName){
-      newCart.append(cart[i])   
-    
-    
-}
+function removeFromCart(itemName) 
+{
+  var newCart = [];
+  for(var i = 0; i < cart.length; i++)
+  {
+    if(cart[i].itemName != itemName)
+    {
+      newCart.push(cart[i]);
+    }
+  }
+  
+  cart = newCart;
+ }
 
-}
 
 function placeOrder(cardNumber) {
   // write your code here
