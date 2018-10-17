@@ -85,7 +85,8 @@ function removeFromCart(itemName)
       newCart.push(cart[i]);
     }
   }
-  
+  if(newCart.length == cart.length)
+  {
   cart = newCart;
  }
 
