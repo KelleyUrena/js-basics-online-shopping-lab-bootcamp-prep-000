@@ -97,6 +97,9 @@ function removeFromCart(itemName)
 function placeOrder(cardNumber) {
    if(!cardNumber)
   { 
-    return "That item is not in your cart.";
+    return "Sorry, we don't have a credit card on file for you.";
   }
+  var cartTotal = total();
+  cart = [];
+  return "Your total cost is $" + cartTotal + ", which will be charted to the card " + cardNumber + ".";
 }
